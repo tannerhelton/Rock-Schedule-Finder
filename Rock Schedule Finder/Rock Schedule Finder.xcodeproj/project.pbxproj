@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F51FB69F1DD2AE230006BBBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51FB69E1DD2AE230006BBBA /* AppDelegate.swift */; };
+		F51FB6A11DD2AE230006BBBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51FB6A01DD2AE230006BBBA /* ViewController.swift */; };
+		F51FB6A41DD2AE230006BBBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51FB6A21DD2AE230006BBBA /* Main.storyboard */; };
+		F51FB6A61DD2AE230006BBBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F51FB6A51DD2AE230006BBBA /* Assets.xcassets */; };
+		F51FB6A91DD2AE230006BBBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51FB6A71DD2AE230006BBBA /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F51FB69B1DD2AE230006BBBA /* Rock Schedule Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rock Schedule Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F51FB69E1DD2AE230006BBBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F51FB6A01DD2AE230006BBBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F51FB6A31DD2AE230006BBBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F51FB6A51DD2AE230006BBBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F51FB6A81DD2AE230006BBBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F51FB6AA1DD2AE230006BBBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F51FB6981DD2AE220006BBBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F51FB6921DD2AE220006BBBA = {
+			isa = PBXGroup;
+			children = (
+				F51FB69D1DD2AE230006BBBA /* Rock Schedule Finder */,
+				F51FB69C1DD2AE230006BBBA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F51FB69C1DD2AE230006BBBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F51FB69B1DD2AE230006BBBA /* Rock Schedule Finder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F51FB69D1DD2AE230006BBBA /* Rock Schedule Finder */ = {
+			isa = PBXGroup;
+			children = (
+				F51FB69E1DD2AE230006BBBA /* AppDelegate.swift */,
+				F51FB6A01DD2AE230006BBBA /* ViewController.swift */,
+				F51FB6A21DD2AE230006BBBA /* Main.storyboard */,
+				F51FB6A51DD2AE230006BBBA /* Assets.xcassets */,
+				F51FB6A71DD2AE230006BBBA /* LaunchScreen.storyboard */,
+				F51FB6AA1DD2AE230006BBBA /* Info.plist */,
+			);
+			path = "Rock Schedule Finder";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F51FB69A1DD2AE220006BBBA /* Rock Schedule Finder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F51FB6AD1DD2AE230006BBBA /* Build configuration list for PBXNativeTarget "Rock Schedule Finder" */;
+			buildPhases = (
+				F51FB6971DD2AE220006BBBA /* Sources */,
+				F51FB6981DD2AE220006BBBA /* Frameworks */,
+				F51FB6991DD2AE220006BBBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rock Schedule Finder";
+			productName = "Rock Schedule Finder";
+			productReference = F51FB69B1DD2AE230006BBBA /* Rock Schedule Finder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F51FB6931DD2AE220006BBBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Tanner Helton";
+				TargetAttributes = {
+					F51FB69A1DD2AE220006BBBA = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 3P3B5AJANL;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F51FB6961DD2AE220006BBBA /* Build configuration list for PBXProject "Rock Schedule Finder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F51FB6921DD2AE220006BBBA;
+			productRefGroup = F51FB69C1DD2AE230006BBBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F51FB69A1DD2AE220006BBBA /* Rock Schedule Finder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F51FB6991DD2AE220006BBBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F51FB6A91DD2AE230006BBBA /* LaunchScreen.storyboard in Resources */,
+				F51FB6A61DD2AE230006BBBA /* Assets.xcassets in Resources */,
+				F51FB6A41DD2AE230006BBBA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F51FB6971DD2AE220006BBBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F51FB6A11DD2AE230006BBBA /* ViewController.swift in Sources */,
+				F51FB69F1DD2AE230006BBBA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F51FB6A21DD2AE230006BBBA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F51FB6A31DD2AE230006BBBA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F51FB6A71DD2AE230006BBBA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F51FB6A81DD2AE230006BBBA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F51FB6AB1DD2AE230006BBBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F51FB6AC1DD2AE230006BBBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F51FB6AE1DD2AE230006BBBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3P3B5AJANL;
+				INFOPLIST_FILE = "Rock Schedule Finder/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tannerhelton.Rock-Schedule-Finder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F51FB6AF1DD2AE230006BBBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3P3B5AJANL;
+				INFOPLIST_FILE = "Rock Schedule Finder/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tannerhelton.Rock-Schedule-Finder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F51FB6961DD2AE220006BBBA /* Build configuration list for PBXProject "Rock Schedule Finder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F51FB6AB1DD2AE230006BBBA /* Debug */,
+				F51FB6AC1DD2AE230006BBBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F51FB6AD1DD2AE230006BBBA /* Build configuration list for PBXNativeTarget "Rock Schedule Finder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F51FB6AE1DD2AE230006BBBA /* Debug */,
+				F51FB6AF1DD2AE230006BBBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F51FB6931DD2AE220006BBBA /* Project object */;
+}
