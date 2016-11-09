@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		F51FB69F1DD2AE230006BBBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51FB69E1DD2AE230006BBBA /* AppDelegate.swift */; };
-		F51FB6A11DD2AE230006BBBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51FB6A01DD2AE230006BBBA /* ViewController.swift */; };
+		F51FB6A11DD2AE230006BBBA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51FB6A01DD2AE230006BBBA /* LoginViewController.swift */; };
 		F51FB6A41DD2AE230006BBBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51FB6A21DD2AE230006BBBA /* Main.storyboard */; };
 		F51FB6A61DD2AE230006BBBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F51FB6A51DD2AE230006BBBA /* Assets.xcassets */; };
 		F51FB6A91DD2AE230006BBBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51FB6A71DD2AE230006BBBA /* LaunchScreen.storyboard */; };
+		F51FB6B11DD2B0410006BBBA /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51FB6B01DD2B0410006BBBA /* SearchViewController.swift */; };
+		F51FB6B31DD2B0510006BBBA /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51FB6B21DD2B0510006BBBA /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F51FB69B1DD2AE230006BBBA /* Rock Schedule Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rock Schedule Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F51FB69E1DD2AE230006BBBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F51FB6A01DD2AE230006BBBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F51FB6A01DD2AE230006BBBA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F51FB6A31DD2AE230006BBBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F51FB6A51DD2AE230006BBBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F51FB6A81DD2AE230006BBBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F51FB6AA1DD2AE230006BBBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F51FB6B01DD2B0410006BBBA /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		F51FB6B21DD2B0510006BBBA /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				F51FB69E1DD2AE230006BBBA /* AppDelegate.swift */,
-				F51FB6A01DD2AE230006BBBA /* ViewController.swift */,
+				F51FB6B01DD2B0410006BBBA /* SearchViewController.swift */,
+				F51FB6B21DD2B0510006BBBA /* ResultsViewController.swift */,
+				F51FB6A01DD2AE230006BBBA /* LoginViewController.swift */,
 				F51FB6A21DD2AE230006BBBA /* Main.storyboard */,
 				F51FB6A51DD2AE230006BBBA /* Assets.xcassets */,
 				F51FB6A71DD2AE230006BBBA /* LaunchScreen.storyboard */,
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F51FB6A11DD2AE230006BBBA /* ViewController.swift in Sources */,
+				F51FB6B11DD2B0410006BBBA /* SearchViewController.swift in Sources */,
+				F51FB6A11DD2AE230006BBBA /* LoginViewController.swift in Sources */,
 				F51FB69F1DD2AE230006BBBA /* AppDelegate.swift in Sources */,
+				F51FB6B31DD2B0510006BBBA /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +271,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3P3B5AJANL;
 				INFOPLIST_FILE = "Rock Schedule Finder/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tannerhelton.Rock-Schedule-Finder";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -276,6 +285,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3P3B5AJANL;
 				INFOPLIST_FILE = "Rock Schedule Finder/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tannerhelton.Rock-Schedule-Finder";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,6 +312,7 @@
 				F51FB6AF1DD2AE230006BBBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
