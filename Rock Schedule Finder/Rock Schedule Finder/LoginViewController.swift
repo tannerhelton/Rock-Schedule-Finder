@@ -12,14 +12,8 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var txtPassword: UITextField!
     
-    var auth = false;
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if (txtPassword.text == "Tanner"){
-            auth = true;
-        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,8 +22,8 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func btnSubmitPassword(_ sender: UIButton) {
-        if (auth == true){
-            performSegue(withIdentifier: "LoginSubmissionTest", sender: self)
+        if (txtPassword.text == "Tanner"){
+            performSegue(withIdentifier: "LoginSubmission", sender: nil)
         }
     }
 

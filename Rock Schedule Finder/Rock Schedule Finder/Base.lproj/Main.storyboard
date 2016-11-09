@@ -57,7 +57,7 @@
                     </view>
                     <connections>
                         <outlet property="txtPassword" destination="l7B-fK-Vrt" id="7rI-Fo-c9X"/>
-                        <segue destination="ejm-Ui-rpr" kind="show" identifier="LoginSubmissionTest" id="NjP-FE-jtI"/>
+                        <segue destination="ejm-Ui-rpr" kind="show" identifier="LoginSubmission" id="Wau-N7-7zL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -75,12 +75,42 @@
                     <view key="view" contentMode="scaleToFill" id="G0R-q8-eO8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Hj9-Jc-SKl">
+                                <rect key="frame" x="16" y="20" width="343" height="29"/>
+                                <segments>
+                                    <segment title="Date"/>
+                                    <segment title="Day Type"/>
+                                </segments>
+                            </segmentedControl>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="vOf-AJ-KGw">
+                                <rect key="frame" x="16" y="56" width="343" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="500356564.87691402">
+                                    <!--2016-11-09 03:56:04 +0000-->
+                                </date>
+                            </datePicker>
+                            <pageControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="4zV-qX-W0P">
+                                <rect key="frame" x="168" y="630" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.57069705310880825" green="0.57069705310880825" blue="0.57069705310880825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="vOf-AJ-KGw" secondAttribute="trailing" constant="16" id="7mL-kP-pBA"/>
+                            <constraint firstItem="4zV-qX-W0P" firstAttribute="centerX" secondItem="G0R-q8-eO8" secondAttribute="centerX" id="CNT-4H-Scv"/>
+                            <constraint firstAttribute="bottom" secondItem="4zV-qX-W0P" secondAttribute="bottom" id="Fvo-cy-qgK"/>
+                            <constraint firstItem="Hj9-Jc-SKl" firstAttribute="top" secondItem="G0R-q8-eO8" secondAttribute="top" constant="20" id="R1Y-qR-Kgu"/>
+                            <constraint firstItem="vOf-AJ-KGw" firstAttribute="top" secondItem="Hj9-Jc-SKl" secondAttribute="bottom" constant="8" symbolic="YES" id="THt-PF-pj2"/>
+                            <constraint firstAttribute="trailing" secondItem="Hj9-Jc-SKl" secondAttribute="trailing" constant="16" id="rfc-tb-fSZ"/>
+                            <constraint firstItem="vOf-AJ-KGw" firstAttribute="leading" secondItem="G0R-q8-eO8" secondAttribute="leading" constant="16" id="uiK-IP-Pqa"/>
+                            <constraint firstItem="Hj9-Jc-SKl" firstAttribute="leading" secondItem="G0R-q8-eO8" secondAttribute="leading" constant="16" id="vfV-kp-pHk"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nDE-7k-58W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="789" y="137"/>
+            <point key="canvasLocation" x="788" y="136.28185907046478"/>
         </scene>
         <!--Results View Controller-->
         <scene sceneID="TYk-mr-E1h">
