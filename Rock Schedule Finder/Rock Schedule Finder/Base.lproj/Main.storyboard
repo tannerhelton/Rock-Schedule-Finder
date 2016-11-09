@@ -82,6 +82,9 @@
                                     <segment title="Date"/>
                                     <segment title="Day Type"/>
                                 </segments>
+                                <connections>
+                                    <action selector="searchTypeAction:" destination="ejm-Ui-rpr" eventType="valueChanged" id="gEa-dr-nLk"/>
+                                </connections>
                             </segmentedControl>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="vOf-AJ-KGw">
                                 <rect key="frame" x="16" y="56" width="343" height="216"/>
@@ -89,17 +92,10 @@
                                     <!--2016-11-09 03:56:04 +0000-->
                                 </date>
                             </datePicker>
-                            <pageControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="4zV-qX-W0P">
-                                <rect key="frame" x="168" y="630" width="39" height="37"/>
-                                <color key="pageIndicatorTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="currentPageIndicatorTintColor" red="0.57069705310880825" green="0.57069705310880825" blue="0.57069705310880825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="vOf-AJ-KGw" secondAttribute="trailing" constant="16" id="7mL-kP-pBA"/>
-                            <constraint firstItem="4zV-qX-W0P" firstAttribute="centerX" secondItem="G0R-q8-eO8" secondAttribute="centerX" id="CNT-4H-Scv"/>
-                            <constraint firstAttribute="bottom" secondItem="4zV-qX-W0P" secondAttribute="bottom" id="Fvo-cy-qgK"/>
                             <constraint firstItem="Hj9-Jc-SKl" firstAttribute="top" secondItem="G0R-q8-eO8" secondAttribute="top" constant="20" id="R1Y-qR-Kgu"/>
                             <constraint firstItem="vOf-AJ-KGw" firstAttribute="top" secondItem="Hj9-Jc-SKl" secondAttribute="bottom" constant="8" symbolic="YES" id="THt-PF-pj2"/>
                             <constraint firstAttribute="trailing" secondItem="Hj9-Jc-SKl" secondAttribute="trailing" constant="16" id="rfc-tb-fSZ"/>
@@ -107,6 +103,9 @@
                             <constraint firstItem="Hj9-Jc-SKl" firstAttribute="leading" secondItem="G0R-q8-eO8" secondAttribute="leading" constant="16" id="vfV-kp-pHk"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="searchType" destination="Hj9-Jc-SKl" id="pL1-8U-3pv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nDE-7k-58W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
