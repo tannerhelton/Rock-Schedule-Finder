@@ -19,6 +19,7 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var txtActivityPeriod: UILabel!
     @IBOutlet weak var txtLateStart: UILabel!
     @IBOutlet weak var txtMassDay: UILabel!
+    @IBOutlet weak var eightPeriodSelection: UISegmentedControl!
     
     var day = "A"
     var activityPeriod = false
@@ -26,6 +27,7 @@ class SearchViewController: UIViewController {
     var massDay = false
     var searchDate = true
     var searchDayType = false
+    var period = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,7 +75,7 @@ class SearchViewController: UIViewController {
         searchDate = false
     }
     
-    @IBAction func updateDay(_ sender: Any) {
+    func updateCriteria() {
         if (sixDaySelection.selectedSegmentIndex == 0) {
             day = "A"
         } else if (sixDaySelection.selectedSegmentIndex == 1) {
@@ -105,6 +107,24 @@ class SearchViewController: UIViewController {
         } else {
             lateStart = false
         }
+        
+        if (eightPeriodSelection.selectedSegmentIndex == 0) {
+            period = 1
+        } else if (eightPeriodSelection.selectedSegmentIndex == 1) {
+            period = 2
+        } else if (eightPeriodSelection.selectedSegmentIndex == 2) {
+            period = 3
+        } else if (eightPeriodSelection.selectedSegmentIndex == 3) {
+            period = 4
+        } else if (eightPeriodSelection.selectedSegmentIndex == 4) {
+            period = 5
+        } else if (eightPeriodSelection.selectedSegmentIndex == 5) {
+            period = 6
+        } else if (eightPeriodSelection.selectedSegmentIndex == 6) {
+            period = 7
+        } else if (eightPeriodSelection.selectedSegmentIndex == 7) {
+            period = 8
+        }
     }
     
     @IBAction func searchTypeAction(_ sender: Any?) {
@@ -118,10 +138,11 @@ class SearchViewController: UIViewController {
     }
     
     @IBAction func search(_ sender: UIButton) {
+        updateCriteria()
         if (searchDate == true) {
-            print()
+            print("Date: \(dateSelection.date) | Period: \(period)")
         } else {
-            print("Day: \(day) | Activity Period: \(activityPeriod) | Late Start: \(lateStart) | Mass Day: \(massDay)")
+            print("Day: \(day) | Period: \(period) | Activity Period: \(activityPeriod) | Late Start: \(lateStart) | Mass Day: \(massDay)")
         }
     }
 }

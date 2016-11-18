@@ -9,6 +9,8 @@
 import UIKit
 
 class ResultsViewController: UIViewController {
+    
+    @IBOutlet weak var listTableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
