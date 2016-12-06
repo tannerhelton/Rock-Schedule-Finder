@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F501C36D1DF7552400F7EB00 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F501C36C1DF7552400F7EB00 /* Alamofire.framework */; };
+		F501C36F1DF755CF00F7EB00 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F501C36C1DF7552400F7EB00 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F51FB69F1DD2AE230006BBBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51FB69E1DD2AE230006BBBA /* AppDelegate.swift */; };
 		F51FB6A11DD2AE230006BBBA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51FB6A01DD2AE230006BBBA /* LoginViewController.swift */; };
 		F51FB6A41DD2AE230006BBBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51FB6A21DD2AE230006BBBA /* Main.storyboard */; };
@@ -16,6 +17,19 @@
 		F51FB6B11DD2B0410006BBBA /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51FB6B01DD2B0410006BBBA /* SearchViewController.swift */; };
 		F51FB6B31DD2B0510006BBBA /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51FB6B21DD2B0510006BBBA /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F501C36E1DF755BD00F7EB00 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F501C36F1DF755CF00F7EB00 /* Alamofire.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F501C36C1DF7552400F7EB00 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
@@ -45,9 +59,9 @@
 		F51FB6921DD2AE220006BBBA = {
 			isa = PBXGroup;
 			children = (
+				F501C36C1DF7552400F7EB00 /* Alamofire.framework */,
 				F51FB69D1DD2AE230006BBBA /* Rock Schedule Finder */,
 				F51FB69C1DD2AE230006BBBA /* Products */,
-				F501C36C1DF7552400F7EB00 /* Alamofire.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +98,7 @@
 				F51FB6971DD2AE220006BBBA /* Sources */,
 				F51FB6981DD2AE220006BBBA /* Frameworks */,
 				F51FB6991DD2AE220006BBBA /* Resources */,
+				F501C36E1DF755BD00F7EB00 /* CopyFiles */,
 			);
 			buildRules = (
 			);
