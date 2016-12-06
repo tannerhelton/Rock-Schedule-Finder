@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F501C36D1DF7552400F7EB00 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F501C36C1DF7552400F7EB00 /* Alamofire.framework */; };
 		F51FB69F1DD2AE230006BBBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51FB69E1DD2AE230006BBBA /* AppDelegate.swift */; };
 		F51FB6A11DD2AE230006BBBA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51FB6A01DD2AE230006BBBA /* LoginViewController.swift */; };
 		F51FB6A41DD2AE230006BBBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51FB6A21DD2AE230006BBBA /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F501C36C1DF7552400F7EB00 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 		F51FB69B1DD2AE230006BBBA /* Rock Schedule Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rock Schedule Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F51FB69E1DD2AE230006BBBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F51FB6A01DD2AE230006BBBA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -33,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F501C36D1DF7552400F7EB00 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +47,7 @@
 			children = (
 				F51FB69D1DD2AE230006BBBA /* Rock Schedule Finder */,
 				F51FB69C1DD2AE230006BBBA /* Products */,
+				F501C36C1DF7552400F7EB00 /* Alamofire.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -270,6 +274,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3P3B5AJANL;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Rock Schedule Finder/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -284,6 +292,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3P3B5AJANL;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Rock Schedule Finder/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
