@@ -12,10 +12,10 @@ var express     = require('express');
 var bodyParser  = require('body-parser');
 
 var connection = mysql.createConnection({
-   host : 'localhost',
+   host : '10.10.102.166',
    user : 'root',
-   password : 'hawklet',
-   database : 'mytasks'
+   password : 'Tech10172001',
+   database : 'heltons'
 });
 
 connection.connect();
