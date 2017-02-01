@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F501C36D1DF7552400F7EB00 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F501C36C1DF7552400F7EB00 /* Alamofire.framework */; };
-		F501C36F1DF755CF00F7EB00 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F501C36C1DF7552400F7EB00 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F51FB69F1DD2AE230006BBBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51FB69E1DD2AE230006BBBA /* AppDelegate.swift */; };
 		F51FB6A11DD2AE230006BBBA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51FB6A01DD2AE230006BBBA /* LoginViewController.swift */; };
 		F51FB6A41DD2AE230006BBBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51FB6A21DD2AE230006BBBA /* Main.storyboard */; };
@@ -16,6 +14,8 @@
 		F51FB6A91DD2AE230006BBBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51FB6A71DD2AE230006BBBA /* LaunchScreen.storyboard */; };
 		F51FB6B11DD2B0410006BBBA /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51FB6B01DD2B0410006BBBA /* SearchViewController.swift */; };
 		F51FB6B31DD2B0510006BBBA /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51FB6B21DD2B0510006BBBA /* ResultsViewController.swift */; };
+		F54E1FBA1E25541600DB31EF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F54E1FB91E25541600DB31EF /* Alamofire.framework */; };
+		F54E1FBB1E25542300DB31EF /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F54E1FB91E25541600DB31EF /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F5CE853E1DF9F0F2001EB9A4 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5CE853D1DF9F0F2001EB9A4 /* SwiftyJSON.framework */; };
 		F5CE85401DF9F106001EB9A4 /* SwiftyJSON.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5CE853D1DF9F0F2001EB9A4 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -28,14 +28,13 @@
 			dstSubfolderSpec = 10;
 			files = (
 				F5CE85401DF9F106001EB9A4 /* SwiftyJSON.framework in CopyFiles */,
-				F501C36F1DF755CF00F7EB00 /* Alamofire.framework in CopyFiles */,
+				F54E1FBB1E25542300DB31EF /* Alamofire.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F501C36C1DF7552400F7EB00 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 		F51FB69B1DD2AE230006BBBA /* Rock Schedule Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rock Schedule Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F51FB69E1DD2AE230006BBBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F51FB6A01DD2AE230006BBBA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +44,7 @@
 		F51FB6AA1DD2AE230006BBBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F51FB6B01DD2B0410006BBBA /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		F51FB6B21DD2B0510006BBBA /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		F54E1FB91E25541600DB31EF /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 		F5CE853D1DF9F0F2001EB9A4 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,7 +54,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5CE853E1DF9F0F2001EB9A4 /* SwiftyJSON.framework in Frameworks */,
-				F501C36D1DF7552400F7EB00 /* Alamofire.framework in Frameworks */,
+				F54E1FBA1E25541600DB31EF /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,8 +64,8 @@
 		F51FB6921DD2AE220006BBBA = {
 			isa = PBXGroup;
 			children = (
+				F54E1FB91E25541600DB31EF /* Alamofire.framework */,
 				F5CE853D1DF9F0F2001EB9A4 /* SwiftyJSON.framework */,
-				F501C36C1DF7552400F7EB00 /* Alamofire.framework */,
 				F51FB69D1DD2AE230006BBBA /* Rock Schedule Finder */,
 				F51FB69C1DD2AE230006BBBA /* Products */,
 			);

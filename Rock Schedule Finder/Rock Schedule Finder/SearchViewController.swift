@@ -9,35 +9,16 @@
 import UIKit
 
 class SearchViewController: UIViewController {
-
-    @IBOutlet weak var searchType: UISegmentedControl!
-    @IBOutlet weak var dateSelection: UIDatePicker!
-    @IBOutlet weak var sixDaySelection: UISegmentedControl!
-    @IBOutlet weak var boolActivityPeriod: UISwitch!
-    @IBOutlet weak var boolLateStart: UISwitch!
-    @IBOutlet weak var boolMassDay: UISwitch!
-    @IBOutlet weak var txtActivityPeriod: UILabel!
-    @IBOutlet weak var txtLateStart: UILabel!
-    @IBOutlet weak var txtMassDay: UILabel!
-    @IBOutlet weak var eightPeriodSelection: UISegmentedControl!
+    
+    @IBOutlet weak var date: UIDatePicker!
+    @IBOutlet weak var periodSelection: UISegmentedControl!
     
     var day = "A"
-    var activityPeriod = false
-    var lateStart = false
-    var massDay = false
-    var searchDate = true
-    var searchDayType = false
     var period = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        sixDaySelection.alpha = 0
-        boolActivityPeriod.alpha = 0
-        boolLateStart.alpha = 0
-        boolMassDay.alpha = 0
-        txtActivityPeriod.alpha = 0
-        txtLateStart.alpha = 0
-        txtMassDay.alpha = 0
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -47,32 +28,6 @@ class SearchViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-    }
-    
-    func dateSearch() {
-        dateSelection.alpha = 255
-        sixDaySelection.alpha = 0
-        boolActivityPeriod.alpha = 0
-        boolLateStart.alpha = 0
-        boolMassDay.alpha = 0
-        txtActivityPeriod.alpha = 0
-        txtLateStart.alpha = 0
-        txtMassDay.alpha = 0
-        searchDate = true
-        searchDayType = false
-    }
-    
-    func dayTypeSearch() {
-        dateSelection.alpha = 0
-        sixDaySelection.alpha = 255
-        boolActivityPeriod.alpha = 255
-        boolLateStart.alpha = 255
-        boolMassDay.alpha = 255
-        txtActivityPeriod.alpha = 255
-        txtLateStart.alpha = 255
-        txtMassDay.alpha = 255
-        searchDayType = true
-        searchDate = false
     }
     
     func updateCriteria() {

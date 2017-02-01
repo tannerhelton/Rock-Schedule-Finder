@@ -24,6 +24,16 @@ class LoginViewController: UIViewController {
     @IBAction func btnSubmitPassword(_ sender: UIButton) {
         if (txtPassword.text == "Tanner"){
             performSegue(withIdentifier: "LoginSubmission", sender: nil)
+        } else {
+            let alertController = UIAlertController(title: "Wrong Password", message: "You have entered the wrong password", preferredStyle: UIAlertControllerStyle.alert)
+            
+            let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default)
+            {
+                (result : UIAlertAction) -> Void in
+                print("You pressed OK")
+            }
+            alertController.addAction(okAction)
+            self.present(alertController, animated: true, completion: nil)
         }
     }
 

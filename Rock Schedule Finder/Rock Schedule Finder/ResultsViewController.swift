@@ -17,16 +17,7 @@ class ResultsViewController: UIViewController {
     var peopleIndex = 0
     
     var day = "A"
-    var activityPeriod = false
-    var lateStart = false
-    var massDay = false
-    var searchDate = true
-    var searchDayType = false
     var period = 1
-    
-//    @IBOutlet weak var firstname: UILabel!
-//    @IBOutlet weak var lastname: UILabel!
-//    @IBOutlet weak var email: UILabel!
     
     func getSheet(url: String) {
         let url = URL(string: url)
