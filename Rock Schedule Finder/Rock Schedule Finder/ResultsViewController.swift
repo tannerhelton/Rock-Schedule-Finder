@@ -38,26 +38,26 @@ class ResultsViewController: UIViewController {
             
             //callback(json)
             self.people = json["feed"]!["entry"] as! NSArray
-            self.uiPump()
+            //self.uiPump()
         }
         
         task.resume()
     }
     
-    func uiPump() {
-        let person = people[peopleIndex] as! Dictionary<String, AnyObject>
-        let day = person["gsx$firstname"]!["$t"]!
-        let activityPeriod = person["gsx$lastname"]!["$t"]!
-        let lateStart = person["gsx$email"]!["$t"]!
-        
-        // instantly update the UI
-        DispatchQueue.main.async(execute: {
-            self.day = (day as? String)!
-            self.activityPeriod = (activityPeriod as? Bool)!
-            self.lateStart = (lateStart as? Bool)!
-            
-        })
-    }
+//    func uiPump() {
+//        let person = people[peopleIndex] as! Dictionary<String, AnyObject>
+//        let day = person["gsx$firstname"]!["$t"]!
+//        let activityPeriod = person["gsx$lastname"]!["$t"]!
+//        let lateStart = person["gsx$email"]!["$t"]!
+//        
+//        // instantly update the UI
+//        DispatchQueue.main.async(execute: {
+//            self.day = (day as? String)!
+//            self.activityPeriod = (activityPeriod as? Bool)!
+//            self.lateStart = (lateStart as? Bool)!
+//            
+//        })
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
