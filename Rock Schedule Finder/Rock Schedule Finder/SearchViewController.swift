@@ -34,9 +34,9 @@ class SearchViewController: UIViewController {
                 // display only the last task
                 let subject = tasks[tasks.count - 1]["0"].string
                 let description = tasks[tasks.count - 1]["summary"].string
-                print(subject)
-                print(description)
-                print("This is it: \(description)")
+                //print(subject)
+                //print(description)
+                print("Today is a: \(description)")
             } else {
                 print("Error")
             }
